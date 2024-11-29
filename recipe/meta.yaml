@@ -1,5 +1,5 @@
 {% set name = "mosquitto" %}
-{% set version = "2.0.16" %}
+{% set version = "2.0.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://mosquitto.org/files/source/{{ name }}-{{ version }}.tar.gz
-  sha256: 638db9e43e89d243ea98d10d66e76ff376131217780decd01abaffacc66d8035
+  sha256: ebd07d89d2a446a7f74100ad51272e4a8bf300b61634a7812e19f068f2759de8
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cmake
     - make
   host:
