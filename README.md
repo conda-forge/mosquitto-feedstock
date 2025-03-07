@@ -204,5 +204,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Zlin526F](https://github.com/Zlin526F/)
+* [@heli2src](https://github.com/heli2src/)
 * [@nerohmot](https://github.com/nerohmot/)
 
